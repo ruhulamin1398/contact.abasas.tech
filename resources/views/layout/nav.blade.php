@@ -7,7 +7,7 @@
             <i class="fa fa-bars text-light "></i>
           </button>
           <a href="{{ route('index') }}">
-          <span class="h2 title text-light"  > BDVETS.COM
+          <span class="h2 title text-light"  >Abasas Technology | Contact
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
