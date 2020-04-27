@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bdvets.com </title>
+    <title>Abasas Tech - Contact </title>
 
     <link href="{{asset('css/chosen.min.css')}}" rel="stylesheet" type="text/css">
     <!-- Custom fonts for this template-->
@@ -78,12 +78,11 @@
 
 
 
+        <script src="{{asset('js/custom/contact.js')}}"></script>
 
 
 
-        <script type="text/javascript">
-            $(".chosen").chosen();
-        </script>
+  
 
 
 

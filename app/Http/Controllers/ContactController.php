@@ -25,8 +25,8 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {///
+
     }
 
     /**
@@ -37,7 +37,14 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
+        $contact = new contact;
+        $contact->name = $request->name;
+        $contact->phone = $request->phone;
+        $contact->address = $request->address;
+        $contact->comment = $request->comment;
+        $contact->save();
+        return back();
     }
 
     /**
@@ -71,7 +78,13 @@ class ContactController extends Controller
      */
     public function update(Request $request, contact $contact)
     {
-        //
+       
+        $contact->name = $request->name;
+        $contact->phone = $request->phone;
+        $contact->address = $request->address;
+        $contact->comment = $request->comment;
+        $contact->save();
+        return back();
     }
 
     /**
@@ -82,6 +95,7 @@ class ContactController extends Controller
      */
     public function destroy(contact $contact)
     {
-        //
+        $contact->delete();
+        return back();
     }
 }

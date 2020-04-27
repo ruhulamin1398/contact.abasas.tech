@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-auto">
                         <span class="text-dark pl-2">Description</span>
-                        <input type="text" name="description"  class="form-control mb-2" id="inlineFormInput" required>
+                        <input type="text" name="comment"  class="form-control mb-2" id="inlineFormInput" required>
                     </div>
 
                     <div class="col-auto">
@@ -78,8 +78,9 @@
                         <tr>
                             <th>#</th>
                             <th>Name</th>
-                            <th>Description</th>
-                            <th>Medichine</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Contact</th>
                             <th>Action</th>
 
                         </tr>
@@ -89,8 +90,9 @@
 
                             <th>#</th>
                             <th>Name</th>
-                            <th>Description</th>
-                            <th>Medichine</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Contact</th>
                             <th>Action</th>
 
                         </tr>
@@ -104,7 +106,9 @@
                         <tr class="data-row">
                             <td class="iteration">{{$i++}}</td>
                             <td class="  word-break name">{{$contact->name}}</td>
-                            <td class=" word-break description ">{{$contact->description}}</td>
+                            <td class=" word-break phone  ">{{$contact->phone}}</td>
+                            <td class=" word-break address ">{{$contact->address}}</td>
+                            <td class=" word-break comment ">{{$contact->comment}}</td>
 
 
 
@@ -154,7 +158,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-dark" id="edit-modal-label ">Edit Category</h5>
+                <h5 class="modal-title text-dark" id="edit-modal-label ">Edit Contact</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -179,9 +183,20 @@
                     <!-- /name -->
                     <!-- description -->
                     <div class="form-group">
-                        <label class="col-form-label" for="modal-input-description">Description</label>
-                        <input type="text" name="description" class="form-control" id="modal-input-description" required>
+                        <label class="col-form-label" for="modal-input-name">Phone</label>
+                        <input type="text" name="phone" class="form-control" id="modal-input-phone" required>
                     </div>
+                    <!-- description -->
+                    <div class="form-group">
+                        <label class="col-form-label" for="modal-input-address">Address</label>
+                        <input type="text" name="address" class="form-control" id="modal-input-address" required>
+                    </div>
+                    <!-- description -->
+                    <div class="form-group">
+                        <label class="col-form-label" for="modal-input-comment">Comment</label>
+                        <input type="text" name="comment" class="form-control" id="modal-input-comment" required>
+                    </div>
+                 
 
                     <div class="form-group">
 
